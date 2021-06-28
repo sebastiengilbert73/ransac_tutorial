@@ -17,7 +17,7 @@ def main():
     # Read the points from the file
     points_df = pd.read_csv(noisy_line_filepath)
     x0x1_list = list(zip(list(points_df.loc[:, 'x0']), list(points_df.loc[:, 'x1'])))
-    x0x1_y_tuples = [(x0x1, 0) for x0x1 in x0x1_list]  # Since we are dealing with a cloud point, there is no output: we fill the 2nd member of the tuple with 0
+    x0x1_y_tuples = [(x0x1, 0) for x0x1 in x0x1_list]  # Since we are dealing with a point cloud, there is no output: we fill the 2nd member of the tuple with 0
 
     # Display the point cloud
     fig, ax = plt.subplots()
